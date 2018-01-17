@@ -1,0 +1,212 @@
+---
+title: "Table One"
+author: "Cyrus Elahi"
+date: "Jan 17, 2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r, echo=FALSE, warning = FALSE}
+knitr::opts_chunk$set(error = TRUE)
+```
+
+
+```{r setup, warning=FALSE}
+knitr::opts_knit$set(root.dir = 'C:/Users/Cyrus Elahi/Documents/R/input')
+
+```
+
+Set up your R environment and load in your data file
+```{r echo=FALSE, warning = FALSE, results="hide"}
+library(ggplot2)
+library(stringr)
+library(forcats)
+library(lubridate)
+library(likert)
+library(dplyr)
+library(tidyr)
+library(kableExtra)
+library(knitr)
+library(scales)
+
+#Set your working directory to the folder you have saved the test data
+setwd <- ("C:/Users/Cyrus Elahi/Documents/R/input")
+
+#read in data file
+data_file <- read.csv("tab1_test_data.csv")
+
+###clean data file however needed - convert continuous data to numeric, all lower case, recode duplicate entries, etc
+#clean upper/lower case problems
+str_to_upper(data_file$col_2_gender)
+
+#convert column to numeric structure (ex. age, bmi)
+data_file$col_name <- as.numeric("data_file$col_1_age")
+
+#or sometimes if column is as.factor and converting to as.numeric
+data_file$col_name <- as.numeric(as.character("data_file$BMI"))
+
+
+#recoding column entries that are slightly different that should be the same
+data_file$Chief.Complaints <- car::recode(data_file$Chief.Complaints, "'HEADAHCE' = 'HEADACHE';
+                                                                       'PHYSICAL' = 'PHYSICAL EXAM';
+                                                                       'RESPRIATORY COMPLAINT' = 'RESPIRATORY COMPLAINT';
+                                                                       'HEARING PROBLEMS' = 'ENT COMPLAINT';
+                                                                       'ALLERGIES' = 'ENT COMPLAINT'") 
+
+
+```
+
+
+Now you are ready to build your table one. We will build a table one with three columns: one including the overall summary data and the next two representing different population subsets.
+
+This first block of code is for building the different population subset columns
+```{r echo = FALSE, results="hide"}
+
+#This code chunk will help reorganize the row in the order you desire. Otherwise the rows will be printed in alaphabetical order
+desired_col_order <- c("Total", "Male", "Female", "All (m/sd)", "Males (m/sd)", "Females (m/sd)", "Hispanic", "White", "Black", "Asian", "Native American", "Other", "Not Available", "Spanish", "English", "Both", " Other", " Not Available")
+
+#This code chunk manipulates and summarized your data_file. select()- place the columns of interest. mutate()- create your desired population subgroups, group_by()- enter in the col_name your created in the mutate() step, summarise()- summarize the columns how you please, unite()- combine two columns (ex mean and sd), gather spread rotates your table into a classic table 1 format, slice()- uses the desired_col_order you defined above to reorder the rows
+diff_pop_subsets <- data_file %>%
+  select(col_1_age, col_2_gender, col_3_race, col_4_lang) %>%
+  mutate(pop_subset = case_when(col_1_age <= 17 ~ "Pediatric pts",
+                                col_1_age >= 18 ~ "Adults"
+                              )) %>%
+  group_by(pop_subset) %>%
+  summarise(AGE = round(mean(col_1_age, na.rm=TRUE), 0),
+            asd = round(sd(col_1_age, na.rm = TRUE), 1),
+            Males = round(mean(col_1_age[col_2_gender == "M"], na.rm = TRUE), 0), 
+            Msd = round(sd(col_1_age[col_2_gender == "M"], na.rm = TRUE), 1),
+            Females = round(mean(col_1_age[col_2_gender == "F"], na.rm = TRUE), 0),
+            Fsd = round(sd(col_1_age[col_2_gender =="F"], na.rm = TRUE), 1),
+            Male = sum(col_2_gender == "M"),
+            Female = sum(col_2_gender == "F"),
+            Total = sum(col_2_gender == "F" | col_2_gender == "M"),
+            Hispanic = sum(col_3_race == "Hispanic"),
+            White = sum(col_3_race == "White"),
+            Black = sum(col_3_race == "Black"),
+            Asian = sum(col_3_race == "Asian"),
+            "Native American" = sum(col_3_race == "Native American"),
+            Other = sum(Race = sum(col_3_race == "Other")),
+            "Not Available" = sum(col_3_race == "N/A"),
+            Spanish = sum(col_4_lang == "Spanish"),
+            English = sum(col_4_lang == "English"),
+            Both = sum(col_4_lang == "Spanish or English"),
+            " Other" = sum(col_4_lang == "sign language" | col_4_lang == "Other"),
+            " Not Available" = sum(col_4_lang == "n/a" | col_4_lang == "N/A")
+            
+        )  %>%
+  unite(col = "All (m/sd)", AGE, asd, sep= " / ") %>%
+  unite(col = "Males (m/sd)", Males, Msd, sep= " / ") %>%
+  unite(col = "Females (m/sd)", Females, Fsd, sep= " / ") %>%
+  gather (., key = "Variable", value = "value", -pop_subset) %>%
+  spread(., key = pop_subset, value = value) %>%
+  slice(match(desired_col_order, Variable)) #%>%
+
+#print your table if you want to preview 
+ diff_pop_subsets
+```
+
+
+
+This first block of code is for building the overall column for your table 1 (including both population subsets from above)
+```{r, echo = FALSE, results="hide"}
+
+#This code chunk will help reorganize the row in the order you desire. Otherwise the rows will be printed in alaphabetical order
+desired_col_order <- c("Total", "Male", "Female", "All (m/sd)", "Males (m/sd)", "Females (m/sd)", "Hispanic", "White", "Black", "Asian", "Native American", "Other", "Not Available", "Spanish", "English", "Both", " Other", " Not Available")
+
+
+#This code chunk manipulates and summarized your data_file. Note you will not need to use mutate(), group_by(), or spread(). select()- place the columns of interest, summarise()- summarize the columns how you please, unite()- combine two columns (ex mean and sd), gather rotates your table into a classic table 1 format, slice()- uses the desired_col_order you defined above to reorder the rows
+overall_summary <- data_file %>%
+  select(col_1_age, col_2_gender, col_3_race, col_4_lang) %>%
+#  mutate(pop_subset = case_when(col_1_age <= 17 ~ "Pediatric pts",
+#                                col_1_age >= 18 ~ "Adults"
+#                              )) %>%
+#  group_by(pop_subset) %>%
+  summarise(AGE = round(mean(col_1_age, na.rm=TRUE), 0),
+            asd = round(sd(col_1_age, na.rm = TRUE), 1),
+            Males = round(mean(col_1_age[col_2_gender == "M"], na.rm = TRUE), 0), 
+            Msd = round(sd(col_1_age[col_2_gender == "M"], na.rm = TRUE), 1),
+            Females = round(mean(col_1_age[col_2_gender == "F"], na.rm = TRUE), 0),
+            Fsd = round(sd(col_1_age[col_2_gender =="F"], na.rm = TRUE), 1),
+            Male = sum(col_2_gender == "M"),
+            Female = sum(col_2_gender == "F"),
+            Total = sum(col_2_gender == "F" | col_2_gender == "M"),
+            Hispanic = sum(col_3_race == "Hispanic"),
+            White = sum(col_3_race == "White"),
+            Black = sum(col_3_race == "Black"),
+            Asian = sum(col_3_race == "Asian"),
+            "Native American" = sum(col_3_race == "Native American"),
+            Other = sum(Race = sum(col_3_race == "Other")),
+            "Not Available" = sum(col_3_race == "N/A"),
+            Spanish = sum(col_4_lang == "Spanish"),
+            English = sum(col_4_lang == "English"),
+            Both = sum(col_4_lang == "Spanish or English"),
+            " Other" = sum(col_4_lang == "sign language" | col_4_lang == "Other"),
+            " Not Available" = sum(col_4_lang == "n/a" | col_4_lang == "N/A")
+            
+        )  %>%
+  unite(col = "All (m/sd)", AGE, asd, sep= " / ") %>%
+  unite(col = "Males (m/sd)", Males, Msd, sep= " / ") %>%
+  unite(col = "Females (m/sd)", Females, Fsd, sep= " / ") %>%
+  gather (., key = "Variable", value = "All Patients") %>%
+#  spread(., key = pop_subset, value = value) %>%
+  slice(match(desired_col_order, Variable)) #%>%
+
+
+#print your table if you want to preview 
+overall_summary
+
+
+```
+
+
+Here you will combine the two data frames you have made (the  diff_pop_subsets data frame and the overall data frame)
+```{r, echo = FALSE, fig.show= 'hold', echo = FALSE}
+
+tab1 <- merge(diff_pop_subsets, overall_summary, by = "Variable", sort = FALSE)
+
+#this step reorganizes you columns
+tab1Reorder <- tab1[, c(1,4,2, 3)]
+write.csv(tab1Reorder, "tab1.csv")
+
+#When you knit to PDF, this step makes a publication like table one. It looks flashy and can be used for internal use. However, many journals prefer an editable version. As result, you will skip this step, proceed below, and knit to word
+ tab1Reorder %>%
+  kable(format= "latex", caption = "Clinic Demographics", booktabs = T) %>%
+  kable_styling(latex_options = "striped", full_width = F) %>%
+  column_spec(1, width = "5cm") %>%
+  column_spec(2, width = "2cm") %>%
+  column_spec(3, width = "2cm") %>%
+  group_rows("Counts", 1, 3) %>%
+  group_rows("Ages", 4, 6) %>%
+  group_rows("Race/Ethnicity", 7, 13) %>%
+  group_rows("Language", 14, 18) %>%
+  add_footnote(c("Adults is 18+", "Peds is 17 & under", "(m/sd) is mean and standard deviation"), notation = "symbol") %>%
+  landscape()
+
+ 
+#this step creates an editable table. Knit this to word.
+tab1Reorder %>% kable()
+ 
+```
+
+This step is to make organize the data in the columns as mean (SD) rather than mean / SD. This is not the most efficient way to achieve this goal. Please feel free to improve code
+```{r }
+reordertab1 <- tab1[, c(1, 4, 2, 3)]
+
+#Now i need to add parenthesis around the SD or %. For this is must seperate, add, parenth, and then re-unite
+reorg_reorder <- reordertab1 %>%
+  separate(col = "All Patients", into= c("all", "all_sd"), sep = "/") %>%
+  separate(col = "Adults", into= c("adults", "adults_sd"), sep = "/") %>%
+  separate(col = "Pediatric pts", into= c("ped", "ped_sd"), sep = "/") 
+
+reorg_reorder[c(4:6),3] <- paste0("(", format(unlist(reorg_reorder[c(4:6),3])),")")
+reorg_reorder[c(4:6),5] <- paste0("(", format(unlist(reorg_reorder[c(4:6),5])),")")
+reorg_reorder[c(4:6),7] <- paste0("(", format(unlist(reorg_reorder[c(4:6),7])),")")
+
+reorg_reorder2 <- reorg_reorder %>%
+  replace_na(list(all_sd = "", adults_sd = "", ped_sd = "")) %>%
+  unite(col = "All Patients", all, all_sd , sep = "") %>%
+  unite(col = "Adults", adults, adults_sd , sep = "") %>%
+  unite(col = "Pediatric pts", ped, ped_sd , sep = "") 
+
