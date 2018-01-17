@@ -1,0 +1,761 @@
+col_1_age,col_2_gender,col_3_race,col_4_lang,Chief Complaints,BMI
+1,F,White,Spanish,Physical exam,18.4
+1,F,Hispanic,Spanish,MSK complaint,19.5
+3,F,Hispanic,Spanish,Infectious disease complaint,14.7
+4,F,Hispanic,Spanish,Physical Exam,14.2
+4,F,Hispanic,Spanish,Physical Exam,13.6
+4,F,Hispanic,English,GI complaint,15.6
+4,F,Hispanic,Spanish,Respiratory complaint,16.8
+5,F,Hispanic,Spanish,Respiratory complaint,14.9
+5,F,Hispanic,Spanish,Infectious disease complaint,13.8
+6,F,Hispanic,Spanish,Physical exam,17.7
+6,F,Hispanic,Spanish,Infectious disease complaint,15.2
+6,F,N/A,Spanish,respiratory complaint,14.3
+6,F,Hispanic,English,GI complaint,16.5
+7,F,Hispanic,Spanish,Infectious disease complaint,14.4
+7,F,Hispanic,N/A,Infectious disease complaint,14.8
+8,F,Hispanic,English,Skin complaint,15.7
+8,F,White,N/A,Physical Exam,17.4
+8,F,N/A,Spanish,Vision complaint,15.9
+8,F,Hispanic,Spanish,Respiratory complaint,16.8
+9,F,Hispanic,Spanish,Physical exam,21.4
+10,F,Hispanic,English,Skin complaint,19.6
+10,F,Hispanic,Spanish,Infectious disease complaint,21.5
+11,F,Hispanic,English,Hearing problems,18.7
+11,F,Hispanic,N/A,Physical exam,20.8
+11,F,Hispanic,Spanish,Physical Exam,21.7
+11,F,Hispanic,English,Physical exam,23.8
+11,F,Hispanic,English,Skin complaint,24.7
+12,F,Hispanic,English,Respiratory complaint,21.8
+12,F,Hispanic,Spanish,none,N/A
+12,F,Hispanic,Spanish,Physical exam,23.8
+12,F,Hispanic,Spanish or English,Physical exam,21.7
+12,F,White,Spanish or English,Infectious disease complaint,19.7
+12,F,White,Spanish or English,ENT complaint,20.3
+12,F,Hispanic,N/A,Physical Exam,27.6
+12,F,Hispanic,Spanish,Infectious disease complaint,21.2
+12,F,Hispanic,English,none,N/A
+13,F,Hispanic,N/A,Physical Exam,21.4
+13,F,Hispanic,Spanish,Physical exam,30.2
+13,F,Hispanic,Spanish,MSK complaint,28.7
+13,F,Hispanic,Spanish,Physical exam,20.5
+13,F,Hispanic,Spanish or English,none,N/A
+13,F,Hispanic,Spanish,physical exam,22.4
+13,F,Hispanic,N/A,none,N/A
+13,F,Hispanic,Spanish or English,MSK complaint,20.9
+13,F,Hispanic,Spanish or English,Physical exam,35.6
+14,F,Hispanic,Spanish or English,Allergies,20.5
+14,F,Hispanic,Spanish,Physical Exam,22.1
+14,F,N/A,Spanish,ENT complaint,19.9
+14,F,Hispanic,Spanish,Physical exam,31.2
+14,F,Hispanic,Spanish,ENT complaint,28.3
+14,F,Hispanic,Spanish,Infectious disease complaint,33
+14,F,Hispanic,Spanish or English,physical exam,22.3
+15,F,Hispanic,Spanish,Skin complaint,22.7
+15,F,N/A,Spanish or English,Physical Exam,N/A
+15,F,Hispanic,Spanish,GU complaint,20.6
+15,F,Hispanic,Spanish,None,N/A
+15,F,Hispanic,English,ENT complaint,27.1
+15,F,Hispanic,Spanish,MSK complaint,39.2
+15,F,Hispanic,English,Physical exam,25
+15,F,Hispanic,N/A,Psychiatric complaint,27
+16,F,Hispanic,Spanish,Pregnancy,19.9
+16,F,Hispanic,N/A,Cardiac complaint,37.8
+16,F,Hispanic,Spanish,GI complaint,24.8
+17,F,Hispanic,English,Abuse,20.4
+17,F,Hispanic,English,GU complaint,33
+17,F,Hispanic,Spanish or English,physical exam,19.6
+17,F,Hispanic,English,Headache,23.4
+17,F,Hispanic,Spanish or English,Infectious disease complaint,21.4
+18,F,Hispanic,English,Infectious disease complaint,19.2
+18,F,Hispanic,Spanish,Physical exam,27.1
+18,F,Hispanic,English,Pap,34.9
+18,F,Hispanic,Spanish,Pregnancy,28.9
+18,F,Hispanic,Spanish,physical exam,29.9
+18,F,Hispanic,Spanish,GU complaint,38
+19,F,Hispanic,English,Pregnancy,25.6
+19,F,Hispanic,Spanish,none,N/A
+19,F,Hispanic,English,Pap,33.6
+19,F,Hispanic,Spanish,GU complaint,18.7
+19,F,Hispanic,Spanish,Physical exam,26.3
+19,F,Hispanic,English,Pregnancy,42.8
+19,F,Hispanic,English,Physical exam,38.3
+19,F,Hispanic,English,GI complaint,25.4
+20,F,Hispanic,English,Hearing problems,34.6
+20,F,Hispanic,Spanish,Pregnancy,51.9
+20,F,Hispanic,Spanish,Physical exam,40.3
+20,F,Hispanic,Spanish,GU complaint,33.6
+20,F,Hispanic,Spanish,Infectious disease complaint,29.3
+20,F,Hispanic,Spanish,Pregnancy,28.2
+20,F,Hispanic,English,Physical exam,22.2
+21,F,White,English,Pap,33.3
+21,F,Hispanic,Spanish,Physical exam,32.3
+21,F,Hispanic,English,Physical exam,29.3
+21,F,Hispanic,English,ENT complaint,29.6
+22,F,Hispanic,Spanish,pap,38.1
+22,F,Hispanic,English,Pap,20
+23,F,Hispanic,Spanish,Breast complaint,26.6
+23,F,Hispanic,Spanish,GU complaint,26.6
+23,F,Hispanic,Spanish,Pap,24.6
+23,F,Hispanic,Spanish,pap,21.7
+24,F,N/A,Spanish,GU complaint,20.6
+24,F,Hispanic,Spanish,Infectious disease complaint,43
+24,F,Hispanic,Spanish,pregnancy,30.9
+24,F,Hispanic,Spanish,Physical exam,33.3
+25,F,Other,Spanish,Pregnancy,24.2
+25,F,Hispanic,Spanish,Pap,23.3
+25,F,Hispanic,English,None,N/A
+25,F,Hispanic,Spanish,ENT complaint,35.5
+25,F,Hispanic,Spanish,Pap,41
+25,F,Hispanic,English,Pap,21.6
+25,F,Hispanic,Spanish,Physical exam,23.2
+25,F,Hispanic,Spanish,GI complaint,25.8
+25,F,Hispanic,Spanish,Infectious disease complaint,29.7
+25,F,Hispanic,Spanish,Pap,24.2
+25,F,Hispanic,Spanish,physical exam,34.1
+25,F,Hispanic,Spanish,pap,18.9
+26,F,N/A,Spanish,GI complaint,31.7
+26,F,Hispanic,Spanish,Pap,26.4
+26,F,Hispanic,English,Pregnancy,43.6
+26,F,Hispanic,English,ENT complaint,30.6
+27,F,White,Spanish,Pap,32.5
+27,F,Hispanic,Spanish,GI complaint,26.2
+27,F,Hispanic,Spanish,Pap,32.1
+27,F,Hispanic,Spanish,MSK complaint,30.1
+28,F,Hispanic,Spanish,Pregnancy,25.3
+28,F,Hispanic,Spanish,GU complaint,35.8
+28,F,Hispanic,Spanish,none,N/A
+28,F,Hispanic,English,Pap,24.4
+28,F,White,Spanish,Pap,24.5
+28,F,Hispanic,Spanish,Physical Exam,22.4
+29,F,Hispanic,Spanish,Pap,33.8
+29,F,Hispanic,English,Pregnancy,31.4
+29,F,Hispanic,Spanish,Pap,37.5
+29,F,Hispanic,Spanish,GU complaint,30.6
+29,F,Hispanic,Spanish,GU complaint,23.4
+29,F,Hispanic,English,Skin complaint,28.3
+29,F,Hispanic,Spanish,physical exam,34.2
+29,F,Hispanic,N/A,headache,28
+29,F,Hispanic,Spanish,Respiratory complaint,41.6
+29,F,Hispanic,English,none,N/A
+29,F,Hispanic,Sign language,Infectious disease complaint,21.2
+29,F,N/A,Spanish,Physical exam,40.2
+30,F,Hispanic,n/a,Physical exam,26.2
+30,F,Hispanic,Spanish,Physical exam,27.5
+30,F,Hispanic,Spanish,None,N/A
+30,F,Hispanic,Spanish,Pregnancy,36.4
+30,F,Hispanic,Spanish,Pap,37.3
+30,F,Hispanic,Spanish,Pap,33.3
+30,F,Hispanic,Spanish,Physical exam,30.6
+30,F,Hispanic,Spanish,Headache,N/A
+30,F,Hispanic,Spanish,Pap,28.9
+30,F,N/A,Spanish,pregnancy,42.9
+30,F,Hispanic,English,pap,34.7
+30,F,Hispanic,Spanish,Physical exam,27.4
+31,F,Hispanic,Spanish,GU complaint,33.4
+31,F,Hispanic,Spanish,none,N/A
+31,F,Hispanic,Spanish,Pap,19.6
+32,F,Hispanic,Spanish,None,N/A
+32,F,Hispanic,Spanish,Pap,21.7
+32,F,Hispanic,Spanish,Pap,30.4
+32,F,Hispanic,Spanish,Infectious disease complaint,31.9
+32,F,Hispanic,Spanish,Pap,26.9
+32,F,Hispanic,English,Pap,40.8
+32,F,Hispanic,Spanish,Pap,27.2
+32,F,Hispanic,Spanish,Abuse,33.3
+33,F,Hispanic,Spanish,Pap,26.9
+33,F,Hispanic,Spanish,allergies,26.3
+33,F,Hispanic,Spanish,Cardiac complaint,49.2
+33,F,Hispanic,Spanish,physical exam,28.7
+33,F,Hispanic,Spanish,Pap,31.6
+33,F,Hispanic,Spanish or English,headache,36.4
+34,F,Hispanic,Spanish,Pap,20.2
+34,F,N/A,Spanish,Pap,27.3
+34,F,Hispanic,Spanish,GU complaint,22.4
+34,F,Hispanic,Spanish,ENT complaint,27.5
+34,F,Hispanic,N/A,Physical exam,28.1
+34,F,Hispanic,Spanish,pap,23.8
+34,F,Hispanic,Spanish or English,Headache,26.8
+35,F,Hispanic,Spanish,Breast complaint,28.3
+35,F,Hispanic,Spanish,Breast complaint,31.7
+35,F,Hispanic,English,Pap,31.7
+35,F,Hispanic,Spanish,Headache,30.4
+35,F,Hispanic,Spanish,GU complaint,31.4
+35,F,Hispanic,Spanish,Pap,26.6
+36,F,Hispanic,Spanish,Physical exam,22.7
+36,F,Hispanic,Spanish,Pap,38.5
+36,F,Hispanic,Spanish,Mammography,N/A
+36,F,Hispanic,Other,Headache,28.5
+36,F,Hispanic,Spanish,Physical exam,32
+36,F,Hispanic,Spanish,pap,24.8
+36,F,Hispanic,Spanish or English,Breast complaint,23.3
+36,F,Hispanic,Spanish,Headache,34
+36,F,Hispanic,Spanish,Cardiac complaint,36.4
+36,F,White,Spanish,Physical exam,24.8
+36,F,Hispanic,Spanish,MSK complaint,28.9
+36,F,Hispanic,English,MSK complaint,31.9
+36,F,Hispanic,Spanish,Pap,24.9
+36,F,White,Spanish,pregnancy,39.1
+36,F,Hispanic,N/A,Pap,25.2
+37,F,Hispanic,Spanish,Breast complaint,26.9
+37,F,White,Spanish,Pap,34.8
+37,F,Hispanic,Spanish,Physical exam,28
+37,F,Hispanic,Spanish,Physical exam,35.7
+37,F,Hispanic,Spanish,Physical exam,34.3
+37,F,Hispanic,Spanish,None,N/A
+37,F,Hispanic,Spanish,pregnancy,48.8
+38,F,Hispanic,Spanish,Pap,19.1
+38,F,Hispanic,Spanish,Infectious disease complaint,29.2
+38,F,Hispanic,English,Pap,43.8
+38,F,Hispanic,Spanish,Breast complaint,40.9
+38,F,Hispanic,Spanish,Pap,34.2
+38,F,Hispanic,Spanish,Pap,25.2
+38,F,Hispanic,Spanish,physical exam,28.1
+38,F,Hispanic,English,Allergies,26.3
+38,F,Hispanic,English,Mammography,25.7
+38,F,Hispanic,Spanish,GU complaint,34.9
+38,F,Hispanic,Spanish,mammography,62
+39,F,N/A,Spanish,pap,24.5
+39,F,Hispanic,Spanish,Pap,25.7
+39,F,Hispanic,Spanish,Pap,28.6
+39,F,Hispanic,Spanish,Pap,26.5
+39,F,Hispanic,Spanish,Mammography,N/A
+39,F,Hispanic,Spanish,GU complaint,30.5
+39,F,Hispanic,Spanish,ENT complaint,27.7
+39,F,Hispanic,Spanish,Physical exam,29.5
+39,F,Hispanic,Spanish,GU complaint,30.8
+39,F,Hispanic,Spanish,Physical exam,24
+39,F,Hispanic,Spanish,GU complaint,26.8
+39,F,Hispanic,N/A,Pap,45.9
+39,F,Hispanic,N/A,pap,28.1
+39,F,Hispanic,N/A,Respiratory complaint,60.2
+40,F,Hispanic,n/a,Mammography,N/A
+40,F,Hispanic,Spanish,Mammography,31.4
+40,F,Hispanic,English,Mammography,N/A
+40,F,Hispanic,Spanish,Pap,34.9
+40,F,Hispanic,Spanish,mammography,N/A
+40,F,Hispanic,N/A,Physical exam,33
+40,F,Hispanic,Spanish,Infectious disease complaint,25.6
+40,F,Hispanic,N/A,Physical exam,37.3
+40,F,Hispanic,Spanish,none,N/A
+40,F,Hispanic,English,none,N/A
+40,F,Hispanic,Spanish,GI complaint,30.3
+40,F,Hispanic,Spanish,Physical exam,34.2
+40,F,Hispanic,Spanish,GU complaint,27.4
+40,F,Hispanic,Spanish,none,N/A
+40,F,Hispanic,Spanish,Infectious disease complaint,40.5
+40,F,Hispanic,Spanish,Mammography,27.2
+40,F,Hispanic,N/A,Physical exam,20.7
+41,F,Hispanic,English,Mammography,N/A
+41,F,Hispanic,Spanish,Pap,26.5
+41,F,Hispanic,n/a,Mammography,N/A
+41,F,Hispanic,n/a,Mammography,N/A
+41,F,Hispanic,Spanish,Physical exam,27.5
+41,F,Hispanic,Spanish,Mammography,N/A
+41,F,N/A,Spanish,Mammography,N/A
+41,F,Hispanic,N/A,mammography,N/A
+41,F,Hispanic,English,Mammography,N/A
+41,F,Hispanic,Spanish,Mammography,N/A
+41,F,Hispanic,Spanish,Mammography,22
+41,F,White,Spanish,Pap,32.9
+41,F,Hispanic,Spanish,Physical exam,52.2
+41,F,Hispanic,Spanish,mammography,N/A
+41,F,Hispanic,Spanish,mammography,N/A
+41,F,White,Spanish,Mammography,36.5
+41,F,Hispanic,N/A,Physical exam,31.3
+41,F,Hispanic,Spanish,Infectious disease complaint,27.8
+41,F,Hispanic,Spanish,Pap,26.6
+41,F,Hispanic,N/A,None,N/A
+41,F,N/A,Spanish,Pap,44
+41,F,Hispanic,Spanish,mammography,N/A
+41,F,Hispanic,Spanish,mammography,N/A
+41,F,Hispanic,N/A,Cardiac complaint,33.3
+41,F,N/A,N/A,GU complaint,32.3
+41,F,Hispanic,Spanish,mammography,N/A
+41,F,N/A,Spanish,mammography,N/A
+42,F,White,English,Neurologic complaint,37.3
+42,F,Hispanic,Spanish,Mammography,N/A
+42,F,Hispanic,Spanish,Mammography,25
+42,F,Hispanic,Spanish,Mammography,29.6
+42,F,Hispanic,N/A,Mammography,N/A
+42,F,Hispanic,Spanish,Mammography,N/A
+42,F,Hispanic,English,Pap,34.6
+42,F,Hispanic,Spanish,Allergies,28.4
+42,F,Hispanic,Spanish,Mammography,27
+42,F,Hispanic,N/A,Mammography,N/A
+42,F,Hispanic,Spanish,Infectious disease complaint,31.9
+42,F,Hispanic,Spanish or English,Mammography,N/A
+42,F,Hispanic,Spanish,Infectious disease complaint,31.3
+42,F,Hispanic,English,Physical exam,51.7
+42,F,Hispanic,N/A,GU complaint,26
+42,F,Hispanic,N/A,Mammography,N/A
+42,F,Hispanic,Spanish,Mammography,N/A
+42,F,Hispanic,Spanish,GI complaint,31.8
+42,F,Hispanic,Spanish,Psychiatric complaint,22.5
+43,F,Hispanic,Spanish,Neurologic complaint,25.1
+43,F,Hispanic,Spanish,Mammography,28.8
+43,F,Hispanic,N/A,Mammography,N/A
+43,F,Hispanic,Spanish,Pap,29.2
+43,F,Hispanic,Spanish,mammography,N/A
+43,F,Hispanic,Spanish,Pap,25.5
+43,F,Hispanic,English,Physical exam,30.8
+43,F,Hispanic,Spanish,mammography,N/A
+43,F,Hispanic,Spanish,Mammography,29
+43,F,Hispanic,English,mammography,N/A
+43,F,Hispanic,N/A,Physical exam,35.9
+43,F,Hispanic,N/A,Mammography,N/A
+43,F,Hispanic,Spanish,Pap,33.7
+43,F,Hispanic,Spanish,Mammography,N/A
+43,F,Hispanic,Spanish,Physical exam,27.4
+43,F,Hispanic,Spanish,mammography,N/A
+43,F,Hispanic,Spanish,pap,25.2
+43,F,Hispanic,Spanish,none,N/A
+43,F,Hispanic,Spanish,mammography,N/A
+44,F,Hispanic,Spanish,Physical exam,32.8
+44,F,Hispanic,Spanish,Mammography,N/A
+44,F,Hispanic,Spanish,Physical exam,23.4
+44,F,Hispanic,Spanish,Pap,29.6
+44,F,Hispanic,Spanish,Pap,25.4
+44,F,Hispanic,Spanish,Mammography,28
+44,F,Hispanic,Spanish,Pap,26.2
+44,F,Hispanic,Spanish,Pap,30.4
+44,F,Hispanic,N/A,Mammography,N/A
+44,F,Hispanic,Spanish,Physical exam,30.9
+44,F,Hispanic,Spanish,mammography,N/A
+44,F,White,N/A,Mammography,34.2
+44,F,Hispanic,Spanish,Pap,27
+44,F,White,Spanish,Mammography,27.9
+44,F,Hispanic,N/A,MSK complaint,49.8
+44,F,Hispanic,Spanish,pap,38.6
+45,F,Hispanic,English,Mammography,N/A
+45,F,Hispanic,English,Mammography,39.6
+45,F,Hispanic,Spanish,ENT complaint,35.8
+45,F,Hispanic,Spanish or English,Pap,48
+45,F,Hispanic,Spanish,mammography,N/A
+45,F,Hispanic,Spanish,Pap,28.4
+45,F,Hispanic,English,Mammography,N/A
+45,F,Hispanic,English,Physical exam,43.6
+45,F,N/A,Spanish,mammography,
+45,F,Hispanic,N/A,Physical exam,40.4
+45,F,Hispanic,Spanish,Pap,30.2
+45,F,Hispanic,Spanish,Mammography,28.9
+45,F,Hispanic,Spanish,Mammography,N/A
+45,F,Hispanic,Spanish,ENT complaint,38.4
+45,F,Hispanic,Spanish,Mammography,N/A
+45,F,Hispanic,Spanish,Breast complaint,31.4
+45,F,Hispanic,N/A,Infectious disease complaint,26.7
+45,F,Hispanic,Spanish,Physical exam,45.1
+45,F,Hispanic,Spanish,mammography,N/A
+45,F,Hispanic,Spanish,Physical exam,37.2
+45,F,Hispanic,Spanish,Physical exam,27.8
+45,F,N/A,Spanish,GI complaint,31.4
+45,F,Hispanic,Spanish,pap,36.9
+45,F,Hispanic,Spanish,pap,29.3
+45,F,N/A,N/A,mammography,N/A
+45,F,Hispanic,Spanish,mammography,30.5
+46,F,Hispanic,Spanish,Mammography,N/A
+46,F,Hispanic,Spanish,mammography,N/A
+46,F,Hispanic,N/A,mammography,N/A
+46,F,Hispanic,Spanish,GU complaint,41.9
+46,F,Hispanic,Spanish,mammography,27.5
+46,F,Hispanic,English,Mammography,N/A
+46,F,Hispanic,Spanish,Mammography,N/A
+46,F,Hispanic,Spanish,Pap,32
+46,F,Hispanic,Spanish,Physical exam,29
+46,F,Hispanic,Spanish,Mammography,N/A
+46,F,Hispanic,N/A,GI complaint,36.6
+46,F,Hispanic,N/A,Mammography,N/A
+46,F,Hispanic,Spanish,none,N/A
+46,F,Hispanic,English,Mammography,N/A
+46,F,Hispanic,Spanish,Physical,26.6
+46,F,Hispanic,Spanish,none,N/A
+46,F,Hispanic,Spanish,Physical exam,34.2
+46,F,Hispanic,Spanish,mammography,N/A
+46,F,Hispanic,English,Mammography,N/A
+46,F,Hispanic,Spanish,MSK complaint,29
+46,F,Hispanic,N/A,Mammography,N/A
+46,F,Hispanic,English,Physical exam,33.05
+46,F,White,Other,Physical exam,32.2
+46,F,Hispanic,Spanish,Physical exam,N/A
+46,F,Hispanic,N/A,mammography,N/A
+46,F,Hispanic,N/A,Respiratory complaint,30
+46,F,Hispanic,Spanish,Psychiatric complaint,25.3
+47,F,Hispanic,n/a,Headache,28.1
+47,F,Hispanic,Spanish,Pap,26.1
+47,F,Hispanic,Spanish,Physical exam,30.9
+47,F,Hispanic,Spanish,Mammography,N/A
+47,F,Hispanic,Spanish,mammography,N/A
+47,F,Hispanic,N/A,Neurologic complaint,39.2
+47,F,Hispanic,Spanish,pap,28.9
+47,F,Hispanic,Spanish,Physical exam,23.9
+47,F,Hispanic,Spanish,Mammography,33.4
+47,F,Hispanic,Spanish,Pap,31.9
+47,F,Hispanic,N/A,Pap,37.5
+47,F,Hispanic,English,Mammography,N/A
+47,F,Hispanic,N/A,mammography,N/A
+47,F,Hispanic,Spanish,MSK complaint,34.8
+47,F,Hispanic,Spanish,Physical exam,25.5
+47,F,Hispanic,Spanish,Pap,30.6
+47,F,Hispanic,Spanish,Mammography,N/A
+47,F,Hispanic,Spanish or English,ENT complaint,41.2
+47,F,Hispanic,Spanish,Mammography,25.7
+47,F,Hispanic,Spanish,GI complaint,25.6
+47,F,Hispanic,Spanish,mammography,N/A
+47,F,Hispanic,N/A,mammography,N/A
+47,F,Hispanic,English,Mammography,N/A
+47,F,Hispanic,Spanish,Breast complaint,34.3
+47,F,Hispanic,N/A,mammography,N/A
+47,F,Hispanic,Spanish,pap,30.1
+47,F,Hispanic,Spanish,GI complaint,32.7
+47,F,White,N/A,Physical exam,23.2
+48,F,Hispanic,Spanish,Mammography,N/A
+48,F,Hispanic,Spanish,Mammography,N/A
+48,F,Hispanic,Spanish,Mammography,N/A
+48,F,Hispanic,Spanish,GU complaint,22.5
+48,F,Hispanic,Spanish,Pap,28.9
+48,F,Hispanic,Spanish,Mammography,N/A
+48,F,Hispanic,Spanish,GI complaint,29.9
+48,F,Hispanic,Spanish,Headahce,33.5
+48,F,Hispanic,Spanish or English,Mammography,N/A
+48,F,Hispanic,Spanish,Mammography,N/A
+48,F,Hispanic,Spanish,Mammography,N/A
+48,F,Hispanic,Spanish,mammography,N/A
+48,F,Hispanic,N/A,mammography,N/A
+48,F,N/A,N/A,Neurologic complaint,39.5
+48,F,Hispanic,Spanish,GU complaint,29.3
+48,F,Hispanic,Spanish,mammography,N/A
+48,F,Hispanic,Spanish,Physical exam,30.3
+48,F,Hispanic,Spanish,pap,31.9
+48,F,Hispanic,Spanish,Physical exam,26.6
+49,F,Hispanic,Spanish,Mammography,N/A
+49,F,Hispanic,Spanish,mammography,N/A
+49,F,Hispanic,Spanish,Pap,N/A
+49,F,Hispanic,Spanish,mammography,N/A
+49,F,Hispanic,Spanish,mammography,N/A
+49,F,Hispanic,Spanish,Physical exam,39.3
+49,F,Hispanic,N/A,Mammography,N/A
+49,F,Hispanic,Spanish,Physical exam,27.6
+49,F,Hispanic,N/A,Mammography,26.2
+49,F,Native American,Other,Pap,27.9
+49,F,Hispanic,Other,mammography,N/A
+49,F,Hispanic,Spanish or English,mammography,22.3
+50,F,Hispanic,n/a,Mammography,N/A
+50,F,Hispanic,Spanish,Pap,22.2
+50,F,Hispanic,Spanish,pap,32.9
+50,F,Hispanic,Spanish,Mammography,N/A
+50,F,Hispanic,Spanish,mammography,N/A
+50,F,Hispanic,Spanish,Pap,25.6
+50,F,Hispanic,Spanish,Mammography,39.6
+50,F,Hispanic,English,GU complaint,34.5
+50,F,Hispanic,N/A,Physical exam,28.3
+50,F,Hispanic,N/A,mammography,N/A
+50,F,Hispanic,Spanish,none,N/A
+50,F,Hispanic,Spanish,Physical exam,45.9
+50,F,N/A,Spanish,Neurologic complaint,30.3
+50,F,Hispanic,Spanish,Physical exam,N/A
+50,F,Hispanic,N/A,mammography,N/A
+50,F,Hispanic,Spanish,Physical exam,28.5
+50,F,Hispanic,Spanish,Physical exam,27.2
+50,F,N/A,N/A,pap,41.5
+51,F,Hispanic,Spanish,Psychiatric complaint,54.9
+51,F,Hispanic,Spanish,Physical exam,29.9
+51,F,Hispanic,English,Physical exam,31.1
+51,F,Hispanic,Spanish,Mammography,N/A
+51,F,Hispanic,Spanish,mammography,N/A
+51,F,Hispanic,Spanish,Mammography,41.6
+51,F,Hispanic,N/A,Mammography,N/A
+51,F,Hispanic,Spanish,Pap,31.4
+51,F,Hispanic,N/A,none,N/A
+51,F,White,Spanish,Physical exam,30.3
+51,F,N/A,Spanish,Mammography,N/A
+51,F,Hispanic,Spanish,Mammography,N/A
+51,F,Hispanic,Spanish,none,N/A
+51,F,Hispanic,Spanish,mammography,N/A
+51,F,Hispanic,Spanish,mammography,N/A
+51,F,Hispanic,Spanish,physical exam,30.4
+52,F,Hispanic,Spanish,Mammography,29.6
+52,F,Hispanic,Spanish,Mammography,39
+52,F,Hispanic,Spanish,Physical exam,26.4
+52,F,Hispanic,Spanish or English,Physical exam,28.1
+52,F,Hispanic,N/A,Cardiac complaint,35.9
+52,F,N/A,N/A,Mammography,30.9
+52,F,Hispanic,English,Pap,38.5
+52,F,Hispanic,Spanish or English,mammography,30.4
+52,F,Hispanic,Spanish,Pap,34.3
+52,F,Hispanic,Spanish,Pap,28.7
+52,F,Hispanic,Spanish,Physical exam,33
+52,F,Hispanic,Spanish,mammography,N/A
+52,F,Hispanic,English,mammography,N/A
+52,F,Hispanic,Spanish,mammography,N/A
+52,F,Hispanic,Spanish,Physical exam,43.9
+52,F,Hispanic,Spanish,Physical exam,27.1
+53,F,Hispanic,Spanish,Mammography,34.4
+53,F,Hispanic,Spanish,mammography,N/A
+53,F,N/A,Spanish,GI complaint,25.5
+53,F,Hispanic,Spanish,Mammography,N/A
+53,F,Hispanic,N/A,Mammography,N/A
+53,F,Hispanic,Spanish,mammography,N/A
+53,F,Hispanic,Spanish or English,Physical exam,37.4
+53,F,Hispanic,Spanish,physical exam,25
+53,F,Hispanic,Spanish,Mammography,N/A
+53,F,Hispanic,Spanish,MSK complaint,32
+53,F,Hispanic,Spanish,Mammography,N/A
+53,F,Hispanic,N/A,pap,26.8
+53,F,N/A,Spanish,Physical exam,26.9
+54,F,Hispanic,Spanish,Pap,36.9
+54,F,N/A,Spanish,Mammography,N/A
+54,F,Hispanic,Spanish,Physical exam,34.9
+54,F,Hispanic,Spanish,Mammography,33.8
+54,F,Hispanic,Spanish,ENT complaint,23.3
+54,F,Hispanic,Spanish,Mammography,N/A
+54,F,Hispanic,Spanish,Mammography,N/A
+54,F,Hispanic,Spanish,Mammography,22.2
+54,F,Hispanic,Spanish,Mammography,33.3
+54,F,Hispanic,N/A,mammography,N/A
+55,F,Hispanic,Spanish or English,Mammography,24.2
+55,F,N/A,Spanish,Mammography,N/A
+55,F,Hispanic,English,Pap,26.4
+55,F,Hispanic,Spanish,GI complaint,23.4
+55,F,Hispanic,Spanish,mammography,N/A
+55,F,Hispanic,N/A,Mammography,N/A
+55,F,Hispanic,Spanish,GU complaint,29.9
+55,F,Hispanic,Spanish,mammography,27.4
+56,F,Hispanic,Spanish,Physical exam,34.3
+56,F,Hispanic,Spanish,Physical exam,29.3
+56,F,Hispanic,Spanish,mammography,N/A
+56,F,Hispanic,Spanish,None,N/A
+56,F,Hispanic,Spanish,none,N/A
+56,F,White,Spanish,Physical exam,46.9
+56,F,Hispanic,Spanish,Physical exam,29.2
+56,F,Hispanic,Spanish,Pap,21.1
+56,F,Hispanic,Spanish,Physical exam,28.7
+57,F,Hispanic,Spanish,Physical exam,30.8
+57,F,Hispanic,Spanish,mammography,N/A
+57,F,N/A,Spanish,GI complaint,35.1
+57,F,Hispanic,Spanish,mammography,N/A
+57,F,Hispanic,Spanish,Pap,27.6
+57,F,Hispanic,Spanish,Mammography,N/A
+57,F,Hispanic,Spanish,Mammography,30.8
+57,F,N/A,N/A,ENT complaint,26.9
+57,F,Hispanic,Spanish,mammography,N/A
+57,F,Hispanic,Spanish,mammography,N/A
+57,F,N/A,N/A,mammography,N/A
+58,F,Hispanic,Spanish,Mammography,N/A
+58,F,Hispanic,N/A,mammography,N/A
+58,F,Hispanic,N/A,Physical exam,42.1
+58,F,Hispanic,Other,Mammography,27.3
+58,F,Hispanic,Spanish,physical exam,25.1
+58,F,Hispanic,Spanish,Physical exam,31.8
+59,F,Hispanic,Spanish,Physical exam,30.4
+59,F,Hispanic,Spanish,Physical exam,34.7
+59,F,Hispanic,n/a,Physical exam,22.1
+59,F,Hispanic,Spanish,Mammography,N/A
+59,F,Hispanic,N/A,Mammography,41.3
+59,F,Hispanic,Spanish,Mammography,N/A
+59,F,Hispanic,Spanish,Cardiac complaint,31.6
+59,F,Hispanic,Spanish,Mammography,N/A
+59,F,Hispanic,English,mammography,N/A
+59,F,Hispanic,N/A,mammography,N/A
+59,F,Hispanic,Spanish,Infectious disease complaint,30.2
+59,F,Hispanic,Spanish,Physical exam,35
+59,F,Hispanic,N/A,ENT complaint,38
+59,F,Hispanic,Spanish,Physical exam,31.9
+60,F,Hispanic,Spanish,mammography,N/A
+60,F,Hispanic,Spanish,Physical exam,27.1
+60,F,Hispanic,English,Mammography,N/A
+60,F,Hispanic,Spanish,Pap,35
+60,F,Hispanic,N/A,mammography,N/A
+60,F,Hispanic,Spanish,Physical exam,29.8
+60,F,White,Spanish,Mammography,33
+60,F,Hispanic,Spanish,Physical exam,33.8
+61,F,Hispanic,Spanish,Allergies,31.7
+61,F,Hispanic,Spanish,Physical exam,32.1
+61,F,Hispanic,Spanish,Physical exam,35.2
+61,F,Hispanic,N/A,Mammography,N/A
+61,F,Hispanic,Spanish,mammography,N/A
+61,F,N/A,N/A,mammography,N/A
+61,F,Hispanic,Spanish,pap,29.3
+61,F,Hispanic,N/A,mammography,N/A
+61,F,Hispanic,Spanish,Physical exam,25
+61,F,N/A,Spanish,Breast complaint,29.6
+62,F,Hispanic,Spanish,Mammography,N/A
+62,F,Hispanic,Other,Mammography,33.9
+62,F,Hispanic,Spanish,mammography,N/A
+62,F,Hispanic,English,Mammography,N/A
+62,F,Hispanic,Spanish,Pap,28.6
+63,F,White,English,Mammography,N/A
+63,F,Hispanic,Spanish,GU complaint,45.6
+63,F,Hispanic,Spanish,Physical exam,29.1
+63,F,Hispanic,Spanish,Pap,29.9
+63,F,Hispanic,Spanish,mammography,N/A
+63,F,Hispanic,Spanish,Vision complaint,31.9
+64,F,Hispanic,Spanish,Physical exam,30.7
+64,F,Hispanic,Spanish,Pap,33.6
+64,F,Hispanic,Spanish or English,Physical exam,29
+64,F,Hispanic,Spanish,mammography,N/A
+64,F,Hispanic,N/A,mammography,N/A
+65,F,Asian,English,Mammography,N/A
+67,F,Hispanic,Spanish,Mammography,N/A
+69,F,White,Spanish,MSK complaint,23
+75,F,Hispanic,Spanish,Neurologic complaint,36.3
+76,F,Hispanic,Spanish,MSK complaint,25.8
+76,F,Hispanic,Spanish,Physical exam,32
+79,F,Hispanic,Spanish,MSK complaint,28.9
+79,F,Hispanic,Spanish,Physical exam,25.3
+80,F,Hispanic,Spanish,Respiratory complaint,N/A
+84,F,Hispanic,N/A,none,N/A
+87,F,Hispanic,Spanish,MSK complaint,29.1
+0,M,Hispanic,English,Respiratory complaint,N/A
+1,M,Hispanic,Spanish,Respiratory complaint,15.9
+1,M,Hispanic,N/A,Infectious disease complaint,16.1
+1,M,Hispanic,N/A,Physical exam,15.6
+1,M,Hispanic,Spanish,Respiratory complaint,N/A
+1,M,White,English,Infectious disease complaint,N/A
+2,M,Hispanic,Spanish,physical exam,15.3
+3,M,Hispanic,n/a,Physical exam,16.3
+3,M,N/A,Spanish,Physical exam,15.6
+4,M,White,Spanish,Infectious disease complaint,15.6
+4,M,Hispanic,Spanish,physical exam,15.9
+4,M,Hispanic,Spanish or English,Psychiatric complaint,16.2
+5,M,Hispanic,N/A,Skin complaint,13.6
+5,M,Hispanic,N/A,ENT complaint,17.1
+6,M,Hispanic,Spanish,Skin complaint,19.2
+6,M,Hispanic,Spanish,Skin complaint,19.6
+6,M,Hispanic,English,Infectious disease complaint,15.9
+6,M,Hispanic,English,Respiratory complaint,21.7
+7,M,Hispanic,Spanish,Physical exam,17.9
+8,M,Hispanic,Spanish,Physical exam,26.2
+8,M,Hispanic,Spanish,Neurologic complaint,15.7
+9,M,Hispanic,Spanish,Respriatory complaint,18.5
+9,M,Hispanic,N/A,physical exam,15.6
+10,M,N/A,Spanish,Infectious disease complaint,28.7
+10,M,Hispanic,N/A,Physical exam,18.8
+10,M,Hispanic,English,Physical exam,18.6
+10,M,Hispanic,English,Skin complaint,23.8
+11,M,Hispanic,English,Physical Exam,32.6
+11,M,Hispanic,Spanish,Physical exam,30.3
+12,M,White,English,Physical exam,21.7
+12,M,Hispanic,Spanish,Physical Exam,17.7
+12,M,Hispanic,Spanish,Physical exam,18.9
+12,M,Hispanic,N/A,Infectious disease complaint,18.7
+12,M,White,N/A,Infectious disease complaint,21.6
+12,M,Hispanic,Spanish or English,physical exam,21.2
+12,M,Hispanic,Spanish or English,Respiratory complaint,21
+13,M,Hispanic,Spanish,physical exam,17.2
+14,M,Hispanic,Spanish or English,Neurologic complaint,19.3
+14,M,Hispanic,Spanish or English,none,N/A
+14,M,Hispanic,English,Physical Exam,16.6
+14,M,Hispanic,Spanish,Psychiatric complaint,19
+14,M,Hispanic,Spanish or English,Physical exam,20.6
+14,M,Hispanic,Spanish,Physical exam,22.6
+15,M,Hispanic,Spanish,Physical exam,17.3
+15,M,Hispanic,N/A,Physical exam,22.9
+15,M,Hispanic,Spanish,Physical exam,22
+15,M,Hispanic,Spanish,physical exam,23.9
+15,M,Hispanic,Spanish,Respiratory complaint,19.7
+16,M,Hispanic,English,Psychiatric complaint,32.2
+16,M,Hispanic,Spanish,Infectious disease complaint,20.5
+17,M,Hispanic,English,MSK complaint,26.7
+17,M,Hispanic,Spanish,GU complaint,26.3
+17,M,Hispanic,Spanish,Respiratory complaint,21.6
+18,M,Hispanic,English,Skin complaint,20.6
+18,M,Hispanic,Spanish,Physical Exam,20.7
+19,M,Hispanic,Spanish,Physical Exam,24.3
+19,M,Hispanic,English,Vision complaint,31.1
+20,M,Hispanic,Spanish,Physical Exam,20.5
+21,M,Hispanic,Spanish,None,N/A
+21,M,Hispanic,English,Physical exam,39.3
+21,M,Hispanic,Spanish,Hearing problems,23.7
+21,M,Hispanic,N/A,none,N/A
+21,M,Hispanic,English,MSK complaint,21.2
+22,M,N/A,Spanish,none,N/A
+22,M,Hispanic,English,MSK complaint,32.8
+22,M,Hispanic,N/A,Physical exam,28.8
+22,M,Hispanic,English,Skin complaint,22.9
+23,M,Hispanic,English,Physical Exam,41.9
+23,M,Hispanic,English,GI complaint,25.9
+24,M,Hispanic,Spanish,GU complaint,26.7
+24,M,Hispanic,English,GI complaint,20.1
+24,M,Hispanic,N/A,GU complaint,24.8
+24,M,Hispanic,English,MSK complaint,24.9
+25,M,Hispanic,Spanish,GI complaint,56.4
+25,M,Hispanic,Spanish,Physical exam,33.2
+25,M,Hispanic,Spanish,GU complaint,27.3
+27,M,Hispanic,Spanish,GU complaint,28.4
+28,M,Hispanic,N/A,Skin complaint,27.4
+30,M,Hispanic,English,physical exam,33.3
+31,M,Hispanic,Spanish or English,Headache,29.4
+32,M,Hispanic,n/a,GI complaint,29.2
+32,M,Hispanic,Spanish,Physical exam,28.1
+32,M,Hispanic,N/A,Physical exam,29.8
+34,M,Hispanic,Spanish,Physical exam,33.7
+34,M,Hispanic,Spanish,MSK complaint,30.1
+34,M,Hispanic,Spanish,Physical exam,28.1
+35,M,Hispanic,Spanish,Physical exam,26.4
+36,M,Hispanic,English,Physical exam,24.8
+36,M,Hispanic,Spanish,Physical exam,28.4
+37,M,Hispanic,Spanish,none,N/A
+37,M,Hispanic,Spanish or English,Physical exam,31.9
+39,M,Hispanic,Spanish or English,Physical exam,35.7
+39,M,Hispanic,English,Physical exam,30.9
+40,M,Hispanic,English,Physical exam,33.5
+40,M,Hispanic,English,Neurologic complaint,29.4
+41,M,Hispanic,N/A,MSK complaint,29.3
+41,M,Hispanic,N/A,Neurologic complaint,24.2
+42,M,Hispanic,Spanish,Physical exam,45.2
+42,M,Hispanic,Spanish,Physical exam,33.8
+42,M,Hispanic,Spanish or English,Physical exam,37.2
+42,M,Hispanic,Spanish,Physical exam,26.4
+43,M,Hispanic,Spanish,None,N/A
+43,M,Hispanic,Spanish,Allergies,34.8
+43,M,Hispanic,Spanish,MSK complaint,32.7
+43,M,Hispanic,Spanish,none,N/A
+45,M,Hispanic,Spanish,Physical exam,33.6
+45,M,Hispanic,Spanish,Physical exam,29.9
+46,M,Hispanic,Spanish,Cardiac complaint,27.7
+47,M,N/A,Spanish,Physical exam,33.3
+47,M,Hispanic,Spanish,mammography,N/A
+47,M,Hispanic,Spanish,none,N/A
+48,M,White,Spanish,Physical exam,29.2
+48,M,Hispanic,Other,Physical exam,30.7
+49,M,Hispanic,Spanish,Physical exam,33.3
+49,M,Hispanic,N/A,MSK complaint,32.4
+49,M,Hispanic,Spanish or English,MSK complaint,34.3
+50,M,Hispanic,Spanish,Physical Exam,29.7
+50,M,Hispanic,N/A,Physical exam,47.1
+50,M,Hispanic,Spanish,Cardiac complaint,38.6
+50,M,Hispanic,Spanish or English,MSK complaint,25.3
+50,M,Hispanic,Spanish,Physical exam,26.5
+51,M,Hispanic,Spanish,GI complaint,43.3
+51,M,Hispanic,Spanish,Physical exam,27.6
+52,M,Hispanic,Spanish,Infectious disease complaint,33.6
+52,M,Hispanic,Spanish,Physical exam,26.3
+52,M,Hispanic,Other,MSK complaint,25.1
+53,M,Hispanic,Spanish,Physical exam,28
+53,M,Hispanic,Spanish,Physical exam,28.8
+53,M,Hispanic,Spanish,Physical exam,28.2
+54,M,Hispanic,Spanish,Physical exam,29.6
+54,M,Hispanic,English,Physical exam,27.8
+54,M,N/A,Spanish,MSK complaint,32.3
+54,M,Hispanic,Spanish,Physical exam,28.5
+55,M,Hispanic,Spanish,Cardiac complaint,31
+56,M,Hispanic,Spanish,Headache,32.6
+56,M,Hispanic,Spanish,Physical exam,30.3
+57,M,Hispanic,Spanish,Physical exam,28.4
+57,M,Hispanic,Spanish,MSK complaint,21.6
+58,M,Hispanic,Spanish,Allergies,38.7
+59,M,Black,English,MSK complaint,24.6
+61,M,N/A,n/a,Cardiac complaint,30.3
+61,M,Hispanic,English,Headache,28.4
+62,M,Hispanic,Spanish,None,N/A
+62,M,Hispanic,Spanish,Physical exam,34.7
+63,M,N/A,Spanish,ENT complaint,26.3
+64,M,Hispanic,Spanish,Physical exam,29.8
+65,M,Hispanic,Spanish,Physical exam,24.1
+66,M,Hispanic,Spanish,MSK complaint,33.1
+68,M,Hispanic,Spanish,MSK complaint,30.4
+69,M,Hispanic,N/A,Physical exam,29.2
+73,M,Hispanic,N/A,MSK complaint,34.5
+77,M,Other,English,Physical exam,29.6
+81,M,Hispanic,N/A,GI complaint,21
+0,M,Hispanic,Spanish,Respiratory complaint,N/A
